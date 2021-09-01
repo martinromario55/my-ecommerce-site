@@ -5,11 +5,170 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
+    width: 100%;  
     margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: auto;
+    padding: 10px;
+}
+header,main,section,footer {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #377eff;
+}
+
+header,footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+main {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.products, .quote, .about, .couresell {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
+nav {
+    
+    background-color: #f39fd1;
+    margin: 0;
+    padding: .8em 0;
+    color: #585e72;
+
+}
+
+nav ul {
+    list-style-type: none;
+    
+}
+
+nav ul li {
+    display: inline;
+    padding: 1em;
+    font-size: larger;
+    font-weight: bolder;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+nav ul li:hover {
+    background-color: #e685cd;
+    padding: 1em;
+}
+
+.top img {
+    margin: 0;
+    padding: 0;
+    width: 50vw;
+    height: 80vh;
+}
+
+h1 {
+    position:absolute;
+    bottom: 200px;
+    padding: 1em;
+    margin: 0;
+    color: white;
+    font-weight: bolder;
+
+}
+
+/* Product Section */
+
+.heading {
+    text-align: center;
+}
+
+.card-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+}
+
+.card {
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    margin: .4em;
+}
+
+.card-image {
+    width: 100%;
+    height: 60%;
+    border: 1px solid green;
+}
+
+.card-caption {
+    margin: 0;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+#price {
+    padding-top: .4em;
+    color: red;
+}
+
+small {
+    color: grey;
+    text-decoration: line-through;
+    padding-left: .3em;
+}
+
+/* Quote Section */
+
+.slogan {
+    text-align: center;
+    height: 200px;
+    background-color: #585372;
+}
+
+.slogan h2 {
+    padding-top: 70px;
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 300px;
+    background-color: #accad1;
+}
+
+/* Couresell Section */
+.couresell {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 300px;
+    background-color: #7683b8;
+}
+
+/* Footer*/
+
+footer {
+    height: 300px;
+    background-color: #585372;
 }
