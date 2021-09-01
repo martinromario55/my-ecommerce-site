@@ -8,6 +8,11 @@ body {
     height: 100%;
     width: 100%;  
     margin: 0;
+    color: #6c757d;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #343a40;
 }
 
 .container {
@@ -46,7 +51,7 @@ nav {
     
     background-color: #f39fd1;
     margin: 0;
-    padding: .8em 0;
+    padding: .5em 0;
     color: #585e72;
 
 }
@@ -75,27 +80,42 @@ nav ul li:hover {
     padding: 1em;
 }
 
+nav .brand {
+    float: right;
+    clear: right;
+    padding-right: .8em;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+/* Main Section*/
+
 .top img {
     margin: 0;
     padding: 0;
-    width: 50vw;
-    height: 80vh;
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
-    position:absolute;
-    bottom: 200px;
+    position:relative;
+    bottom: 100px;
     padding: 1em;
     margin: 0;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bolder;
-
 }
 
 /* Product Section */
 
 .heading {
     text-align: center;
+}
+
+.heading h2 {
+    margin-top: .9em;
 }
 
 .card-group {
@@ -122,6 +142,7 @@ h1 {
     text-align: center;
     font-weight: bolder;
     font-size: 1.3em;
+    color: #343a40;
 }
 
 #price {
@@ -133,6 +154,21 @@ small {
     color: grey;
     text-decoration: line-through;
     padding-left: .3em;
+}
+
+.card-image:hover {
+    opacity: .5;
+}
+
+.cap a {
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bolder;
+    color: #e685cd;
+}
+
+.cap a:hover {
+    text-decoration: underline;
 }
 
 /* Quote Section */
