@@ -116,6 +116,7 @@ h1 {
 
 .heading h2 {
     margin-top: .9em;
+    color: #343a40;
 }
 
 .card-group {
@@ -187,11 +188,37 @@ small {
     font-size: 2em;
 }
 
+/* About Section */
 .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 300px;
     background-color: #accad1;
+}
+
+.boast h3 {
+    font-size: xx-large;
+    margin-top: .2em;
+    color: #343a40;
+    padding: .2em;
+}
+
+#pound {
+    padding: .2em;
+    color: white;
+    background-color: #f39fd1;
+}
+
+.stats p {
+    font-size: x-large;
+    text-align: center;
+    color: #343a40;
+    padding: .2em;
+}
+
+#pound1 {
+    color: white;
+    border-bottom: 10px solid #f39fd1;
 }
 
 /* Couresell Section */
@@ -202,9 +229,132 @@ small {
     background-color: #7683b8;
 }
 
+.rating {
+    border-right: 4px solid white;
+}
+
+.rating h4 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+    color: white;
+    margin-top: 3em;
+}
+
+.rating p {
+    text-align: center;
+    color: white;
+}
+
+.couresell-post {
+    text-align: center;
+}
+
+.couresell-post h4 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+    color: white;
+    margin-top: 3em;
+}
+
+.couresell-post p {
+    color: white;
+}
+
 /* Footer*/
 
 footer {
-    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
     background-color: #585372;
+}
+
+.payments, .link2, .link1, .links {
+    border: 1px solid black
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form address {
+    color: white;
+    padding: .2em;
+    margin-top: 1em;
+}
+
+input {
+    width: 70%;
+    height: 50px;
+    margin: .2em;
+    border-radius: 10px;
+    background-color: #f39fd1;
+    font-size: x-large;
+    color: white;
+}
+
+.fa-arrow-right {
+    font-size: x-large;
+}
+
+.form p {
+    color: white;
+    padding: .2em;
+}
+
+.form img {
+    width: 70%;
+    padding-left: 1em;
+}
+
+.link1 h4, .link2 h4, .links ul li a {
+    color: white;
+    padding: .2em;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: .2em;
+}
+
+.links ul li {
+    padding: .2em;
+}
+
+.links ul li a {
+    text-decoration: none;
+}
+
+.links ul li a:hover {
+    text-decoration: underline;
+}
+
+.link2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.payments {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    ;
+
+}
+.payments img {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.payments h4{
+    color: white;
+    padding: .2em;
+}
+
+.payments p {
+    color: white;
+    padding: .2em;
+    text-align: center;
 }
